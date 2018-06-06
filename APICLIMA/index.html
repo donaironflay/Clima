@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="clima">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link  rel="icon" type="text/css" href="icon.png">
+	<title>Climas</title>
+</head>
+<div class="opacity circulo">
+<body ng-controller="ListadoClima">
+	<div class="estilo" class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="titulo">Climas de Guatemala</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="centrado" class="form-group">
+					<label class="centrado1" for="sel1">Selecciona la Ciudad</label>
+					<br><br><br>
+						<select class="form-control" id="sel1" ng-model="a">
+							<option ng-repeat="x in Countries" class="peque" value="{{x}}">{{x}}</option>
+					</select>
+				</div>
+			</div>
+			<br><br><br>
+			<div class="button">
+				<button class="centrados" type="button" ng-click="Weather(a)">Ingresar</button>
+			</div>
+
+
+
+
+			<br><br><br>
+			<div>
+				<p class="centrado1">Temperatura Maxima {{TMax}} C˚</p>
+				<br><br><br>
+				<p class="centrado1">Temperatura Minima {{TMin}} C˚</p>
+			<br><br><br>
+				<p class="centrado1">Humedad {{Humedad}} %</p>
+			</div>
+		</div> 
+			<br><br><br>
+			<!--<iframe class="centrado" src="https://maps.owm.io/map/pressure_new/100/latitud/longitud.png?appid=c53467779aeb05f0263c285b8e91fb41"></iframe>
+			<br><br><br>
+			<iframe class="centrado" src="https://tile.openweathermap.org/map/pressure_new/100/latitud/longitud.png?appid=c53467779aeb05f0263c285b8e91fb41"></iframe>
+			!-->
+
+
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
+

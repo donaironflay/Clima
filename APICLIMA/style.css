@@ -1,0 +1,56 @@
+body{
+	background: url("fondo.jpg") no-repeat fixed;
+	-webkit-background-size: cover;
+}
+.titulo{
+	text-align: center;
+	display: block;
+	margin: auto;
+	color: #3BE930;
+	font-size: 50px;
+	font-family:Calibri (Cuerpo);
+}
+.texto{
+	margin: 10px auto;
+	display: block;
+}
+.centrado{
+	text-align: center;
+	margin: auto;
+	display: block;
+	font-family:Calibri (Cuerpo);
+	color: #49E32B;
+	font-size: 26px;
+}
+.centrado1{
+	text-align: center;
+	margin: auto;
+	display: block;
+	font-family:oblique;
+	color: #387;
+	font-size: 30px;
+}
+.centrados{
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	font-family: arial;
+	color: black;
+	font-size: 22px;
+}
+
+.estilo{
+	border-width: 10px;
+	border-radius: 40px;
+	height: 600px;
+	width: 550px;
+	margin-top: -255px;
+	margin-left: -375px;
+	left: 60%;
+	top: 40%;
+	position: absolute;
+	opacity: 1.6px
+}
+.peque{
+	border-radius: 12px
+}
